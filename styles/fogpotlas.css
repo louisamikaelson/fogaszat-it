@@ -1,0 +1,515 @@
+
+
+.main-body {
+    padding: 10px 50px 80px 50px;
+    background-color: #d9f3f1;
+    width: 70%;
+    margin: auto;
+    box-shadow: 2px 3px 6px rgb(155, 153, 153);
+    margin-bottom: 20px;
+}
+
+.cim {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.cim h1 {
+    font-size: 60px;
+    font-weight: normal;
+}
+
+.cim-szoveg {
+    margin-top: 50px;
+}
+
+.cim-szoveg p {
+    font-size: 20px;
+}
+
+.media-container-row {
+    display: block;
+    width: 100%;
+    height: auto;
+
+}
+
+.media-content {
+  display: inline;
+  width: 100%;
+
+}
+
+#ppp {
+  font-size: 20px;
+}
+
+.media-content-cim {
+  font-size: 20px;
+  width: 45%;
+  display: inline-block;
+
+
+}
+
+.media-img {
+  width: 30%;
+  display: inline-block;
+
+}
+
+
+
+.video-row {
+    height: auto;
+    margin-bottom: 0px;
+    width: auto;
+    background-color: rgb(209, 235, 233);
+    margin-top: 20px;
+    
+    text-align: center;
+    padding: 5px;
+    
+    
+}
+
+.video1,
+.video2,
+.video3 {
+    display: inline;
+    width: 100px;
+    margin: 5px;
+    
+}
+
+.hosszu-p {
+    margin: 10px;
+    padding: 0px;
+}
+
+.hosszu-p-text {
+    font-size: 20px;
+}
+
+#indent-row {
+    margin: 10px;
+    padding: 20px;
+}
+
+#indent-content {
+    width: 100px;
+}
+
+#indent-content-cim {
+    width: 40%;
+    padding: 10px;
+    display: inline-block;
+}
+
+#kisebb-bek {
+  width: 500px;
+  padding: 10px;
+  padding-right: 20px;
+}
+
+.sinus-kep {
+    width: 547px;
+}
+
+.in1a-kep {
+    width: 25%;
+    display: inline-block;
+}
+
+.sima-p {
+    font-size: 40px;
+    text-align: center;
+}
+
+.in3-kep {
+    width: 60%;
+    display: inline-block;
+    
+}
+
+.indent-content-cim2 {
+    width: 30%;
+    display: inline-block;
+    
+}
+
+.indent-content-cim2 {
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+#nem-bold {
+    font-weight: 400;
+}
+
+#sima-szoveg {
+    font-weight: 400;
+    width: 60%;
+    margin-left: 20px;
+}
+
+
+.row > .column {
+    padding: 0 8px;
+    margin-bottom: 5px;
+  }
+
+  .row {
+
+    margin-left: 1px;
+    margin-right: 1px;
+    margin-bottom: 1px;
+    text-align: center;
+    width: 100%;
+  }
+
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .column {
+    display: inline-block;
+    width: 40%;
+    margin: 10px;
+
+    
+  }
+
+ 
+
+  
+  /* The Modal (background) */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 150px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+
+    
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    max-width: 1200px;
+
+  }
+  
+  /* The Close Button */
+  .close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .mySlides {
+    display: none;
+  }
+
+  
+  
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  img {
+    margin-bottom: -4px
+
+  }
+  
+  .caption-container {
+    text-align: center;
+    background-color: black;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .demo {
+    opacity: 0.6;
+    margin:100px;
+    border: 50px;
+    padding:0px;
+    display: inline-block;
+    right: 0px;
+
+    
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+  
+  img.hover-shadow {
+    transition: 0.3s;
+  }
+  
+  .hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+
+  .smart-guide {
+    border: 2px solid white;
+    width: auto;
+    padding: 20px;
+    height: auto;
+    margin: auto;
+    text-align: center;
+    display: block;
+    
+    background-color: aliceblue;
+    background-image: linear-gradient(to right, rgb(181, 231, 237), rgb(195, 234, 236));
+}
+
+.smart-guide-title {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.smart-guide-title p {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.smart-guide-video {
+    margin-top: 5px;
+}
+
+.text1-main {
+    font-size: 30px;
+}
+
+.smart-guide-text1 {
+  font-size: 20px;
+}
+
+.smart-guide-text2 {
+    text-align: left;
+    height: auto;
+    font-size: 20px;
+}
+
+.smart-guide-elonyok {
+    height: auto;
+}
+
+.bold-p {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    text-decoration: underline;
+}
+
+li {
+    font-size: 23px;
+
+}
+
+.implant-pontok {
+    text-align: left;
+    display: inline-block;
+    font-size: 20px;
+}
+
+.implantacio-folyamat {
+    height: auto;
+
+}
+
+.kulon-p {
+    font-size: 27px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.monitor-kep {
+    width: 300px;
+    display: inline-block;
+}
+
+.implantacio-kep {
+    display: inline-block;
+
+}
+
+.kozep {
+  text-decoration: underline;
+  font-size: 25px;
+}
+
+
+
+
+
+  body {
+    background-image: linear-gradient(to right, rgb(52, 154, 168), rgb(153, 207, 210));
+    background-color: white;
+    padding-top: 140px;
+    margin: 0;
+  }
+
+  * {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+  }
+
+  @media (max-width: 1246px){
+    #sima-szoveg {
+      width: 90%;
+    }
+  }
+
+
+  @media (max-width: 920px){
+    body {
+        padding-top: 140px;
+    }
+    .main-body{
+      width: auto;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 30px;
+      margin-top: 20px;
+    }
+    .media-img{
+      width: 45%;
+    }
+    .smart-guide {
+      width: auto;
+    }
+    .cim{
+      margin-top: 30px;
+    }
+
+
+}
+@media (max-width: 612px){
+    body {
+        padding-top: 170px;
+    }
+    .main-body{
+      width: auto;
+      padding-left: 20px;
+      padding-right: 20px;
+
+    }
+    .media-img{
+      width: 50%;
+    }
+    .media-content-cim{
+      width: 40%;
+    }
+
+}
+
+@media (max-width: 500px){
+  .media-content {
+    display: inline-block;
+    width: 100%;
+  }
+  .media-content-cim {
+    width: 100%;
+  }
+  .column{
+    width: 80%;
+  }
+  .in1a-kep{
+    width: 50%;
+  }
+}
+
+@media (max-width: 400px){
+  .smart-guide-video video{
+    width: 100%;
+  }
+  .video1 video{
+    width: 100%;
+  }
+  .monitor-kep{
+    width: 85%;
+  }
+}
+
+@media (max-width: 370px){
+  .cim h1{
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 330px){
+  .smart-guide-title p{
+    font-size: 30px;
+  }
+  .media-content video{
+    width: 100%;
+  }
+}
+
