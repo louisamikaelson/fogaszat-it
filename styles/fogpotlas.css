@@ -16,7 +16,7 @@
 
 .cim h1 {
     font-size: 60px;
-    width: auto;
+    overflow-wrap: anywhere;
     font-weight: normal;
 }
 
