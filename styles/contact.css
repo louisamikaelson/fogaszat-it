@@ -105,3 +105,33 @@ button{
     font-size: 20px;
     text-align: left;
 }
+
+
+@media (max-width: 467px){
+    body{
+        padding-top: 200px;
+    }
+}
+
+@media (max-width: 346px){
+    body{
+        padding-top: 160px;
+    }
+}
+
+@media (max-width: 365px){
+    h1{
+        font-size: 40px;
+    }
+    #info{
+        font-size: 18px;
+    }
+    .main-body p{
+        font-size: 22px;
+    }
+    .main{
+        width: 80%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+}
