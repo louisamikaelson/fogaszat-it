@@ -1,0 +1,321 @@
+.main {
+    margin-top: 50px;
+    margin-left: 26%;
+    padding: 20px;
+    background-color: white;
+    border: 2px solid black;
+    width: 45%;
+    margin-bottom: 50px;
+
+}
+
+
+@media only screen and (max-width: 1065px){
+    .main{
+        width: 55%;
+        margin-left: 21%;
+    }
+}
+
+@media only screen and (max-width: 850px){
+    .main{
+        width: 65%;
+        margin-left: 18%;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .main{
+        width: 80%;
+        margin-left: 7%;
+    }
+}
+
+@media only screen and (max-width: 550px){
+    .main{
+        width: auto;
+        margin-right: 5%;
+    }
+}
+
+.mb-6 label{
+    font-size: 25px;
+    
+}
+
+.mb-6 input {
+    margin-left: 5px;
+    margin-top: 5px;
+    font-size: 25px;
+    width: 90%;
+    border: 1px solid rgb(155, 149, 149);
+    border-radius: 5px;
+    padding-left: 5px;
+}
+
+.mb-6 textarea{
+    margin-left: 5px;
+    margin-top: 5px;
+    font-size: 25px;
+    width: 90%;
+    border: 1px solid rgb(155, 149, 149);
+    border-radius: 5px;
+    padding-left: 5px;
+}
+
+.mb-6 {
+    margin-top: 13px;
+}
+
+h1{
+    text-align: center;
+    font-size: 50px;
+    margin-top: .5em;
+    margin-bottom: .2em;
+}
+
+p{
+    text-align: center;
+    font-size: 24px;
+}
+
+button{
+    font-size: 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(59, 154, 167);
+    color: white;
+    width: 90%;
+    height: 70px;
+    margin-left: 15px;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: rgb(46, 109, 117);
+    transition: 0.3s;
+}
+
+
+
+
+body.dark-mode .main-body{
+    background-image: linear-gradient(to right, rgb(28, 81, 88), rgb(117, 163, 166));
+}
+
+body.dark-mode .orvos-nev-text{
+    color: black;
+}
+
+body.dark-mode .orvos-nev{
+    color: black;
+}
+
+.media-body {
+    text-align: center;
+    margin: auto;
+    width: auto;
+    
+}
+
+
+
+
+
+
+/*-- -------------------------- -->
+<---           Staff            -->
+<--- -------------------------- -*/
+/* Mobile */
+@media only screen and (min-width: 0em) {
+    #staff {
+      padding-top: 5em;
+      width: 80%;
+      background-color: white;
+      margin: auto;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+    #staff .container {
+      width: 90%;
+      margin: auto;
+    }
+    #staff .topper {
+      font-size: 0.7em;
+      line-height: 1.35714286;
+      color: #0e817c;
+      letter-spacing: .06em;
+      margin-bottom: 0.42857143em;
+      display: block;
+      text-transform: uppercase;
+      font-weight: bold;
+      margin: auto;
+      text-align: center;
+    }
+    #staff h2 {
+      font-size: 2.1em;
+      line-height: 1em;
+      font-weight: 900;
+      text-align: center;
+      display: block;
+      margin-bottom: 0.47619048em;
+      position: relative;
+    }
+    #staff h2:before {
+      content: '';
+      position: absolute;
+      height: 3.57142857em;
+      width: 3.57142857em;
+      background: var(--primary);
+      opacity: .05;
+      top: -1.19047619em;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: -1;
+    }
+    #staff .main-p {
+      font-size: 0.9em;
+      color: #595959;
+      text-align: center;
+      width: 100%;
+      max-width: 35em;
+      margin: auto;
+      margin-bottom: 3.88888889em;
+    }
+    #staff .member {
+      margin-bottom: 3.75em;
+      width: 100%;
+
+    }
+    #staff .member .image {
+      position: relative;
+      width: 100%;
+      max-width: 20em;
+      height: 20em;
+      margin: auto;
+      margin-bottom: 2.5em;
+    }
+    #staff .member .image img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: auto;
+      width: 70%;
+      object-fit: cover;
+      border: 2px solid black;
+    }
+    #staff .member .desc {
+      border-left: 5px solid var(--primary);
+    }
+    #staff .member h3 {
+      font-size: 2.2em;
+      line-height: 1.5em;
+      margin-bottom: 0em;
+    }
+    #staff .member .title {
+      font-size: 1em;
+      line-height: 1.6875;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      color: #272525;
+      margin-bottom: 1.5em;
+      display: block;
+    }
+  }
+  /* Tablet */
+  @media only screen and (min-width: 48em) {
+    #staff .container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      width: 96%;
+      max-width: 57.2em;
+      padding: 0;
+
+    }
+    #staff .member {
+      margin-left: 30%;
+      text-align: center;
+      margin-bottom: 6em;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      max-width: none;
+    }
+    #staff .member .image {
+      width: 40%;
+      margin: 0;
+      margin-right: 2.5em;
+    }
+    #staff .member .content {
+      width: 60%;
+    }
+  }
+
+
+
+  @media only screen and (max-width: 500px){
+    .staff-content{
+      font-size: 18px;
+    }
+  }
+
+  @media only screen and (max-width: 400px){
+    .staff-content{
+      font-size: 16px;
+    }
+  }
+
+  .staff-content{
+    text-align: left;
+  }
+
+  @media only screen and (max-width: 785px){
+    #staff .member .image{
+        height: 12em;
+    }
+    #staff{
+        margin-bottom: 3em;
+    }
+  }
+
+  @media only screen and (max-width: 700px){
+    #staff .member h3{
+      font-size: 2em;
+    }
+  }
+
+
+  body.dark-mode #staff{
+    background-color: #05181b;
+  }
+
+body.dark-mode #staff .member .title{
+    color: white;
+}
+
+  body.dark-mode .container{
+    background-color: #05181b;
+  }
+
+  body.dark-mode desc h3, span{
+    color: white;
+  }
+
+  body.dark-mode .staff-content{
+    color: white;
+  }
+
+  body.dark-mode .main{
+    background-color: #05181b;
+  }
+
+  body.dark-mode .flex-items{
+    background-color: #05181b;
+  }
+  body.dark-mode .flex-container{
+    background-color: #05181b;
+  }
+
+  body.dark-mode .mb-6-title{
+    color: white;
+  }

@@ -4,75 +4,119 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://kit.fontawesome.com/30aae26307.js" crossorigin="anonymous"></script>
-    <script src="js/navScroll.js" defer></script>
-    <meta name="description" content="Incontra la nostra squadra.">
-    <link rel="stylesheet" href="styles/csapatunk.css">
-    <link rel="stylesheet" href="styles/footer.css">
-    <link rel="stylesheet" href="styles/header.css">
-    <link rel="stylesheet" href="styles/preloader.css">
-    <script src="js/preloader.js" defer></script>
-    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+    <meta name="description" content="Meet the team at the Perfect Smile Dental Clinic.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/dark.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/ourteam.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    </style>
     <title>La Nostra Squadra | Perfect Smile Dental Implant Centre Hungary</title>
 </head>
 <body>
-
-    <div class="header-box">
-        <div class="logo">
-            <a href="index.html"> <img src="images/unnamed.gif"> </a>
+    <header id="cs-navigation">
+        <div class="cs-container">
+            <!--Nav Logo-->
+            <a href="index.html" class="cs-logo" aria-label="back to home">
+                <img src="images/ps-logo.png" alt="logo" width="210" height="29" aria-hidden="true" decoding="async">
+            </a>
+            <!--Navigation List-->
+            <nav class="cs-nav" role="navigation">
+                <!--Mobile Nav Toggle-->
+                <button class="cs-toggle" aria-label="mobile menu toggle">
+                    <div class="cs-box" aria-hidden="true">
+                        <span class="cs-line cs-line1" aria-hidden="true"></span>
+                        <span class="cs-line cs-line2" aria-hidden="true"></span>
+                        <span class="cs-line cs-line3" aria-hidden="true"></span>
+                    </div>
+                </button>
+                <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+                <div class="cs-ul-wrapper">
+                    <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                        <li class="cs-li">
+                            <a href="index.html" class="cs-li-link cs-active">
+                                Home
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="aboutus.html" class="cs-li-link">
+                                Chi Siamo
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="implantation.html" class="cs-li-link">
+                                Impianto
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="ourteam.html" class="cs-li-link">
+                                La Nostra Squadra
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="etour.html" class="cs-li-link">
+                                E-Tour
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="contactus.html" class="cs-li-link">
+                                Contatti
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+    
+            <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
+             <button id="dark-mode-toggle" aria-label="dark mode toggle">
+                 <svg class="cs-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480" xml:space="preserve"><path d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z"/></svg>
+                <img class="cs-sun" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fsun.svg" decoding="async" alt="moon" width="15" height="15">
+            </button>
         </div>
+    </header>
 
-        <div class="icons">
-            <ul class="nav-row">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="aboutus.html">Chi Siamo</a></li>
-                <li><a href="ourteam.html">La Nostra Squadra</a></li>
-                <li><a href="implantation.html">Impianto</a></li>
-                <li><a href="etour.html">E-Tour</a></li>
-                <li><a href="ourpartners.html">I Nostri Partner</a></li>
-                <li><a href="accommodation.html">Sistemazione</a></li>
-                <li><a href="contact.html">Contatti</a></li>
+<!-- ============================================ -->
+<!--                   Banner                     -->
+<!-- ============================================ -->
 
-              </ul>
-        </div>
+<div id="banner-712">
+    <div class="cs-container">
+        <span class="cs-int-title">La Nostra Squadra</span>
     </div>
+    <!--Background Image-->
+    <picture class="cs-background">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" src="images/wallpaper.jpg">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" src="images/wallpaper.jpg">
+        <img loading="lazy" decoding="async" src="images/wallpaper.jpg" alt="banner" width="1280" height="568" aria-hidden="true">
+    </picture>
+</div>
 
     <div class="main-body">
         <div class="media-body">     
             <div class="line"></div>
-            <p class="job-title">Primario Medico</p>
-            <div class="foorvos">
-                <div class="foorvos-box">
-                    <div class="orvos-kep">
-                        <img class="orvos-kep-img" src="staff/foorvos.png" alt="dr csaba borbath">
-                    </div>
-                    <div class="orvos-nev">
-                        <p class="orvos-nev-text" id="foorvos-nev-text">Dr. Csaba Borbáth</p>
-                    </div>
-                    <div>
-                        <p class="foorvos-plusz">MOM MSC Chirurgo Orale</p>
-                    </div>
-                </div>
-            </div>
             <h1 class="job-title">Dentisti</h1>
             <div class="dolgozok-row">
                 <div class="orvos">
                     <div class="orvos-box">
                         <div class="orvos-kep">
-                            <img class="orvos-kep-img"src="staff/vereb.jpg" alt="dr tamas vereb">
+                            <img class="orvos-kep-img"src="staff/vereb.jpg" alt="dr tamas vereb" decoding="async">
                         </div>
                         <div class="orvos-nev">
                             <p class="orvos-nev-text">Dr. Tamás Vereb</p>
@@ -82,7 +126,7 @@
                 <div class="orvos">
                     <div class="orvos-box">
                         <div class="orvos-kep">
-                            <img class="orvos-kep-img"src="staff/artur.jpg" alt="dr artur radvanszki">
+                            <img class="orvos-kep-img"src="staff/artur.jpg" alt="dr artur radvanszki" decoding="async">
                         </div>
                         <div class="orvos-nev">
                             <p class="orvos-nev-text">Dr. Artur Radvánszki</p>
@@ -92,7 +136,7 @@
                 <div class="orvos">
                     <div class="orvos-box">
                         <div class="orvos-kep">
-                            <img class="orvos-kep-img"src="staff/katona.jpg" alt="dr andras katona">
+                            <img class="orvos-kep-img"src="staff/katona.jpg" alt="dr andras katona" decoding="async">
                         </div>
                         <div class="orvos-nev">
                             <p class="orvos-nev-text">Dr. András Katona</p>
@@ -102,7 +146,7 @@
                 <div class="orvos">
                     <div class="orvos-box">
                         <div class="orvos-kep">
-                            <img class="orvos-kep-img"src="staff/hede.jpg" alt="dr ede honcz">
+                            <img class="orvos-kep-img"src="staff/hede.jpg" alt="dr ede honcz" decoding="async">
                         </div>
                         <div class="orvos-nev">
                             <p class="orvos-nev-text">Dr. Ede Höncz</p>
@@ -112,17 +156,7 @@
                 <div class="orvos">
                     <div class="orvos-box">
                         <div class="orvos-kep">
-                            <img class="orvos-kep-img"src="staff/karasz.jpg" alt="dr gergely karasz">
-                        </div>
-                        <div class="orvos-nev">
-                            <p class="orvos-nev-text">Dr. Gergely Karasz</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="orvos">
-                    <div class="orvos-box">
-                        <div class="orvos-kep">
-                            <img class="orvos-kep-img"src="staff/vitos.jpg" alt="dr fruzsina vitos">
+                            <img class="orvos-kep-img"src="staff/vitos.jpg" alt="dr fruzsina vitos" decoding="async">
                         </div>
                         <div class="orvos-nev">
                             <p class="orvos-nev-text">Dr. Fruzsina Vitos</p>
@@ -132,30 +166,10 @@
                 <div class="orvos">
                     <div class="orvos-box">
                         <div class="orvos-kep">
-                            <img class="orvos-kep-img"src="staff/eszter.jpeg">
+                            <img class="orvos-kep-img"src="staff/eszter.jpeg" decoding="async">
                         </div>
                         <div class="orvos-nev">
                             <p class="orvos-nev-text">Dr. Eszter Vince-Bandi</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="orvos">
-                    <div class="orvos-box">
-                        <div class="orvos-kep">
-                            <img class="orvos-kep-img"src="staff/danita.jpg" alt="dr anita dozsa">
-                        </div>
-                        <div class="orvos-nev">
-                            <p class="orvos-nev-text">Dr. Anita Dózsa</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="orvos">
-                    <div class="orvos-box">
-                        <div class="orvos-kep">
-                            <img class="orvos-kep-img"src="staff/lang.jpg" alt="dr alexandra lang">
-                        </div>
-                        <div class="orvos-nev">
-                            <p class="orvos-nev-text">Dr. Alexandra Láng</p>
                         </div>
                     </div>
                 </div>
@@ -167,7 +181,7 @@
                 <div class="orvos">
                     <div class="orvos-box">
                         <div class="orvos-kep">
-                            <img class="orvos-kep-img"src="staff/breka.jpg">
+                            <img class="orvos-kep-img"src="staff/breka.jpg" decoding="async" loading="lazy">
                         </div>
                         <div class="orvos-nev">
                             <p class="orvos-nev-text">Réka Borbáth-Szabó</p>
@@ -177,17 +191,17 @@
                 <div class="orvos">
                     <div class="orvos-box">
                         <div class="orvos-kep">
-                            <img class="orvos-kep-img"src="staff/tnora.jpg">
+                            <img class="orvos-kep-img"src="staff/tnora.jpg" decoding="async" loading="lazy">
                         </div>
                         <div class="orvos-nev">
-                            <p class="orvos-nev-text">Dr. Csanádyné Talmácsi Nóra</p>
+                            <p class="orvos-nev-text">Nóra Dr. Csanádyné Talmácsi</p>
                         </div>
                     </div>
                 </div>
                 <div class="orvos">
                     <div class="orvos-box">
                         <div class="orvos-kep">
-                            <img class="orvos-kep-img"src="staff/szhen.jpg">
+                            <img class="orvos-kep-img"src="staff/szhen.jpg" decoding="async" loading="lazy">
                         </div>
                         <div class="orvos-nev">
                             <p class="orvos-nev-text">Henriett Godácsné Székesi</p>
@@ -197,7 +211,7 @@
                 <div class="orvos">
                     <div class="orvos-box">
                         <div class="orvos-kep">
-                            <img class="orvos-kep-img"src="staff/ranett.jpg">
+                            <img class="orvos-kep-img"src="staff/ranett.jpg" decoding="async" loading="lazy">
                         </div>
                         <div class="orvos-nev">
                             <p class="orvos-nev-text">Anett Révész</p>
@@ -207,41 +221,20 @@
                 <div class="orvos">
                     <div class="orvos-box">
                         <div class="orvos-kep">
-                            <img class="orvos-kep-img"src="staff/lkrisztina.jpg">
-                        </div>
-                        <div class="orvos-nev">
-                            <p class="orvos-nev-text">Krisztina Lázár</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="orvos">
-                    <div class="orvos-box">
-                        <div class="orvos-kep">
-                            <img class="orvos-kep-img"src="staff/saci.jpeg">
+                            <img class="orvos-kep-img"src="staff/saci.jpeg" decoding="async" loading="lazy">
                         </div>
                         <div class="orvos-nev">
                             <p class="orvos-nev-text">Sarolta Mészáros</p>
                         </div>
                     </div>
                 </div>
-                <div class="orvos">
-                    <div class="orvos-box">
-                        <div class="orvos-kep">
-                            <img class="orvos-kep-img"src="staff/magnes.jpg">
-                        </div>
-                        <div class="orvos-nev">
-                            <p class="orvos-nev-text">Ágnes Molnár</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
             <div class="line"></div>
             <h1 class="job-title">Igienisti dentali</h1>
             <div class="dologozok-row">
                 <div class="orvos">
                     <div class="orvos-box">
                         <div class="orvos-kep">
-                            <img class="orvos-kep-img"src="staff/brenda.jpg" alt="brenda melian">
+                            <img class="orvos-kep-img"src="staff/brenda.jpg" alt="brenda melian" decoding="async" loading="lazy">
                         </div>
                         <div class="orvos-nev">
                             <p class="orvos-nev-text">Brenda Melian</p>
@@ -251,30 +244,10 @@
                 <div class="orvos">
                     <div class="orvos-box">
                         <div class="orvos-kep">
-                            <img class="orvos-kep-img"src="staff/papp_edina.jpg">
+                            <img class="orvos-kep-img"src="staff/user.jpg" decoding="async" loading="lazy">
                         </div>
                         <div class="orvos-nev">
-                            <p class="orvos-nev-text">Edina Papp</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="orvos">
-                    <div class="orvos-box">
-                        <div class="orvos-kep">
-                            <img class="orvos-kep-img"src="staff/franciska.jpg">
-                        </div>
-                        <div class="orvos-nev">
-                            <p class="orvos-nev-text">Franciska Sibán</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="orvos">
-                    <div class="orvos-box">
-                        <div class="orvos-kep">
-                            <img class="orvos-kep-img"src="staff/dorka.jpeg">
-                        </div>
-                        <div class="orvos-nev">
-                            <p class="orvos-nev-text">Dorottya Halmai-Novák</p>
+                            <p class="orvos-nev-text">Rita Kis-György</p>
                         </div>
                     </div>
                 </div>
@@ -285,7 +258,7 @@
                 <div class="orvos">
                     <div class="orvos-box">
                         <div class="orvos-kep">
-                            <img class="orvos-kep-img"src="staff/kdominika.jpg">
+                            <img class="orvos-kep-img"src="staff/kdominika.jpg" decoding="async" loading="lazy">
                         </div>
                         <div class="orvos-nev">
                             <p class="orvos-nev-text">Dominika Kocsis</p>
@@ -295,7 +268,7 @@
                 <div class="orvos">
                     <div class="orvos-box">
                         <div class="orvos-kep">
-                            <img class="orvos-kep-img"src="staff/bea.jpg">
+                            <img class="orvos-kep-img"src="staff/bea.jpg" decoding="async" loading="lazy">
                         </div>
                         <div class="orvos-nev">
                             <p class="orvos-nev-text">Beáta Rostás-Nagy</p>
@@ -305,27 +278,7 @@
                 <div class="orvos">
                     <div class="orvos-box">
                         <div class="orvos-kep">
-                            <img class="orvos-kep-img"src="staff/ildi.jpg">
-                        </div>
-                        <div class="orvos-nev">
-                            <p class="orvos-nev-text">Ildikó Gregus Váczi</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="orvos">
-                    <div class="orvos-box">
-                        <div class="orvos-kep">
-                            <img class="orvos-kep-img"src="staff/niki.jpeg">
-                        </div>
-                        <div class="orvos-nev">
-                            <p class="orvos-nev-text">Nikolett Meleg</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="orvos">
-                    <div class="orvos-box">
-                        <div class="orvos-kep">
-                            <img class="orvos-kep-img"src="staff/szcsenge.jpg">
+                            <img class="orvos-kep-img"src="staff/szcsenge.jpg" decoding="async" loading="lazy">
                         </div>
                         <div class="orvos-nev">
                             <p class="orvos-nev-text">Csenge Szabó</p>
@@ -335,7 +288,7 @@
                 <div class="orvos">
                     <div class="orvos-box">
                         <div class="orvos-kep">
-                            <img class="orvos-kep-img"src="staff/virag.jpg">
+                            <img class="orvos-kep-img"src="staff/virag.jpg" decoding="async" loading="lazy">
                         </div>
                         <div class="orvos-nev">
                             <p class="orvos-nev-text">Virág Bajusz</p>
@@ -345,7 +298,7 @@
                 <div class="orvos">
                     <div class="orvos-box">
                         <div class="orvos-kep">
-                            <img class="orvos-kep-img"src="staff/fanny.jpeg">
+                            <img class="orvos-kep-img"src="staff/fanny.jpeg" decoding="async" loading="lazy">
                         </div>
                         <div class="orvos-nev">
                             <p class="orvos-nev-text">Fanny Kasza</p>
@@ -355,17 +308,7 @@
                 <div class="orvos">
                     <div class="orvos-box">
                         <div class="orvos-kep">
-                            <img class="orvos-kep-img"src="staff/tundi.jpeg">
-                        </div>
-                        <div class="orvos-nev">
-                            <p class="orvos-nev-text">Tünde Törökné Bódi</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="orvos">
-                    <div class="orvos-box">
-                        <div class="orvos-kep">
-                            <img class="orvos-kep-img"src="staff/agota.jpeg">
+                            <img class="orvos-kep-img"src="staff/agota.jpeg" decoding="async" loading="lazy">
                         </div>
                         <div class="orvos-nev">
                             <p class="orvos-nev-text">Ágota Dékány</p>
@@ -375,17 +318,17 @@
                 <div class="orvos">
                     <div class="orvos-box">
                         <div class="orvos-kep">
-                            <img class="orvos-kep-img"src="staff/bobe.jpeg">
+                            <img class="orvos-kep-img"src="staff/user.jpg" decoding="async" loading="lazy">
                         </div>
                         <div class="orvos-nev">
-                            <p class="orvos-nev-text">Böbe Mácsainé</p>
+                            <p class="orvos-nev-text">Mercédesz Rébék</p>
                         </div>
                     </div>
                 </div>
                 <div class="orvos">
                     <div class="orvos-box">
                         <div class="orvos-kep">
-                            <img class="orvos-kep-img"src="staff/user.jpg">
+                            <img class="orvos-kep-img"src="staff/user.jpg" decoding="async" loading="lazy">
                         </div>
                         <div class="orvos-nev">
                             <p class="orvos-nev-text">Csenge Tóthné Baranyai</p>
@@ -393,23 +336,62 @@
                     </div>
                 </div>
             </div>
-            <div class="big-pic">
-                <img src="images/csapat2022.jpg">
-            </div>
         </div>
     </div>
 
-    <div class="footer-box">
-        <div class="address"><a href="https://www.google.com/maps/place/Hódmezővásárhely,+Petőfi+út+30,+6800/@46.4162034,20.3241886,17z/data=!3m1!4b1!4m5!3m4!1s0x47446f70550cea01:0x902200b162620fb!8m2!3d46.4162034!4d20.3263773">6800, Hódmezővásárhely, Petőfi út 30.</a>
+<div>
+    <img class="team-pic" loading="lazy" decoding="async" src="images/csapat2022.webp" alt="hiker" width="434" height="434" aria-hidden="true">
+</div>
+
+<!-- ============================================ -->
+<!--                   Footer                     -->
+<!-- ============================================ -->
+
+<footer id="cs-footer-274">
+    <div class="cs-container">
+        <!-- Logo Group -->
+        <div class="cs-logo-group">
+            <a aria-label="go back to home" class="cs-logo" href="index.html">
+                <!-- Remove the light class if you don't need the dark logo -->
+                <img class="cs-logo-img" aria-hidden="true" loading="lazy" decoding="async" src="images/ps-logo.png" alt="logo" width="240" height="32">
+            </a>
+            
         </div>
-        <div class="icons-copyright">
-            <div class="bottom-icons">
-                <a href="https://www.facebook.com/MosolyCentrum/"><i class="fab fa-facebook-f"></i> </a>
-                <a href="mailto: drborbathfogaszat@gmail.com"><i class="fa-solid fa-envelope"></i> </a>
-            </div>
-            <div class="copyright">Perfect Smile Dental Implant Centre Hungary &#169; 2024</div>
-        </div>
-        
+        <!-- Links -->
+        <ul class="cs-nav">
+            <li class="cs-nav-li">
+                <span class="cs-header">Contatti</span>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="tel:003385226455">+3385226455</a>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="mailto:drborbath.it@gmail.com">drborbath.it@gmail.com</a>
+            </li>
+        </ul>
+        <ul class="cs-nav">
+            <li class="cs-nav-li">
+                <span class="cs-header">Indirizzo</span>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="https://www.google.com/maps/place/Hódmezővásárhely,+Petőfi+út+30,+6800/@46.4162034,20.3238024,17z/data=!3m1!4b1!4m6!3m5!1s0x47446f70550cea01:0x902200b162620fb!8m2!3d46.4162034!4d20.3263773!16s%2Fg%2F11kx12b3sh?entry=ttu">6800 Hódmezővásárhely,<br> Petőfi út 30</a>
+            </li>
+        </ul>
+        <!-- Contact Info -->
+        <ul class="cs-nav">
+            <li class="cs-nav-li">
+                <span class="cs-header">Orari di Apertura</span>
+            </li>
+            <li class="cs-nav-li">
+                Lunedi - Venerdí: 7am-7pm
+            </li>
+        </ul>
     </div>
+    <div class="copyright">Perfect Smile Dental Implant Centre Hungary &#169; 2024</div>
+</footer>
+
+
+
+ <script defer src="js/nav.js"></script>
 </body>
 </html>

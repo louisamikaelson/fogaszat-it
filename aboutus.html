@@ -4,183 +4,265 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://kit.fontawesome.com/30aae26307.js" crossorigin="anonymous"></script>
-    <script src="js/navScroll.js" defer></script>
     <meta name="description" content="The Perfect Smile Dental Clinic is located in Hódmezővásárhely, Hungary. We provide first-class services 
     to our patients.">
-    <link rel="stylesheet" href="styles/rolunk.css">
-    <link rel="stylesheet" href="styles/footer.css">
-    <link rel="stylesheet" href="styles/header.css">
-    <link rel="stylesheet" href="styles/preloader.css">
-    <link rel="stylesheet" type="text/css" href="styles/lightbox.min.css">
-    <script src="js/lightbox-plus-jquery.min.js" defer></script>
-    <script src="js/preloader.js" defer></script>
-    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/dark.css">
+    <link rel="stylesheet" href="css/lightbox.css">
+    <link rel="stylesheet" href="css/aboutus.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    </style>
+    <style>
+        .wow:first-child {
+          visibility: hidden;
+        }
+      </style>
     <title>Chi Siamo | Perfect Smile Dental Implant Centre Hungary</title>
 </head>
 <body>
-
-    <div class="header-box">
-        <div class="logo">
-            <a href="index.html"> <img src="images/unnamed.gif"> </a>
-        </div>
-
-        <div class="icons">
-            <ul class="nav-row">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="aboutus.html">Chi Siamo</a></li>
-                <li><a href="ourteam.html">La Nostra Squadra</a></li>
-                <li><a href="implantation.html">Impianto</a></li>
-                <li><a href="etour.html">E-Tour</a></li>
-                <li><a href="ourpartners.html">I Nostri Partner</a></li>
-                <li><a href="accommodation.html">Sistemazione</a></li>
-                <li><a href="contact.html">Contatti</a></li>
-
-              </ul>
-        </div>
-    </div>
-    <div class="main-body">
-        <img id=main-pic src="aboutus-pics/mainpic3.png">
-        <div class="main-content">
-            <p class="first">Il Perfect Smile Implant Center, una delle cliniche dentistiche più grandi dell'Ungheria, tratta i
-                pazienti con soluzioni complesse per tutti i problemi dentali e chirurgici orali secondo i più
-                alti standard europei.
-            </p>
+    <header id="cs-navigation">
+        <div class="cs-container">
+            <!--Nav Logo-->
+            <a href="index.html" class="cs-logo" aria-label="back to home">
+                <img src="images/ps-logo.png" alt="logo" width="210" height="29" aria-hidden="true" decoding="async">
+            </a>
+            <!--Navigation List-->
+            <nav class="cs-nav" role="navigation">
+                <!--Mobile Nav Toggle-->
+                <button class="cs-toggle" aria-label="mobile menu toggle">
+                    <div class="cs-box" aria-hidden="true">
+                        <span class="cs-line cs-line1" aria-hidden="true"></span>
+                        <span class="cs-line cs-line2" aria-hidden="true"></span>
+                        <span class="cs-line cs-line3" aria-hidden="true"></span>
+                    </div>
+                </button>
+                <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+                <div class="cs-ul-wrapper">
+                    <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                        <li class="cs-li">
+                            <a href="index.html" class="cs-li-link cs-active">
+                                Home
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="aboutus.html" class="cs-li-link">
+                                Chi Siamo
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="implantation.html" class="cs-li-link">
+                                Impianto
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="ourteam.html" class="cs-li-link">
+                                La Nostra Squadra
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="etour.html" class="cs-li-link">
+                                E-Tour
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="contactus.html" class="cs-li-link">
+                                Contatti
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
     
-            <p>Siamo specializzati in odontoiatria estetica e implantologia. L'atmosfera tranquilla della
+            <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
+             <button id="dark-mode-toggle" aria-label="dark mode toggle">
+                 <svg class="cs-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480" xml:space="preserve"><path d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z"/></svg>
+                <img class="cs-sun" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fsun.svg" decoding="async" alt="moon" width="15" height="15">
+            </button>
+        </div>
+    </header>
+
+    <div id="banner-712">
+        <div class="cs-container">
+            <span class="cs-int-title">Chi Siamo</span>
+        </div>
+        <!--Background Image-->
+        <picture class="cs-background">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="images/wallpaper-m.webp">
+            <!--Tablet and above Image-->
+            <source media="(min-width: 601px)" srcset="images/wallpaper.webp">
+            <img loading="lazy" decoding="async" src="images/wallpaper.webp" alt="banner" width="1280" height="568" aria-hidden="true">
+        </picture>
+    </div>
+
+    <div class="main-txt">
+        <p>Il Perfect Smile Implant Center, una delle cliniche dentistiche più grandi dell'Ungheria, tratta i
+            pazienti con soluzioni complesse per tutti i problemi dentali e chirurgici orali secondo i più
+            alti standard europei. </br></br>
+
+            Siamo specializzati in odontoiatria estetica e implantologia. L'atmosfera tranquilla della
                 nostra clinica combinata con l'attenzione assoluta e la competenza professionale del nostro
-                personale garantiranno che i pazienti ricevano un trattamento di prima classe.
-            </br>
-            </br>
-            La qualità del nostro lavoro è garantita dal nostro moderno sistema diagnostico, dalla
-radiografia panoramica digitale e dall'impianto di scansione TC. Nella clinica vengono
-utilizzate attrezzature, strumenti e materiali dentali della massima qualità.
-            </br>
-            </br>
-            Il laboratorio odontoiatrico si trova nella clinica, garantendo che i tecnici siano sempre a
-disposizione del team odontoiatrico.
-            </br>
-            </br>
-            Tutti i materiali, compresi gli impianti, sono forniti da fornitori internazionali di livello
-mondiale.
-                </p>
-        </div>
-        <div class="line"></div>
-        <div class="video-row">
-            <div class="video1">
-                <video width="320" height="240" controls>
-                    <source src="media/video1.mp4" type="video/mp4">
-                    <source src="media/video1.ogv" type="video/ogv">
-                    <source src="media/video1.webm" type="video/webm">
-                </video>
-            </div>
-            <div class="video2">
-                <video width="320" height="240" controls>
-                    <source src="media/video2.mp4" type="video/mp4">
-                    <source src="media/video2.ogv" type="video/ogv">
-                    <source src="media/video2.webm" type="video/webm">
-                </video>
+                personale garantiranno che i pazienti ricevano un trattamento di prima classe.</br></br>
+            
+                La qualità del nostro lavoro è garantita dal nostro moderno sistema diagnostico, dalla
+                radiografia panoramica digitale e dall'impianto di scansione TC. Nella clinica vengono
+                utilizzate attrezzature, strumenti e materiali dentali della massima qualità.</br></br>
+            
+                Il laboratorio odontoiatrico si trova nella clinica, garantendo che i tecnici siano sempre a
+                disposizione del team odontoiatrico.</br></br>
+            
+                Tutti i materiali, compresi gli impianti, sono forniti da fornitori internazionali di livello
+                mondiale.</p>
+    
+            <video width="300" height="225" controls autoplay muted>
+                <source src="media/video1.mp4" type="video/mp4">
+                <source src="media/video1.ogv" type="video/ogv">
+                <source src="media/video1.webm" type="video/webm">
+            </video><video width="300" height="225" controls autoplay muted>
+                <source src="media/video2.mp4" type="video/mp4">
+                <source src="media/video2.ogv" type="video/ogv">
+                <source src="media/video2.webm" type="video/webm">
+            </video>
 
-            </div>
+            <p>La clinica Dentistica e i chirurghi orali sono registrati presso il Consiglio dentale ungherese e
+                presso molti consigli dentistici europei, incluso il Regno Unito. La clinica fa interventi
+                chirurgici in Irlanda e Italia.</br></br>
 
-        
-
-
-        </div>
-        <div class="second"></div>
-
-            <div class="szedacio-text">
-                <p>La clinica Dentistica e i chirurghi orali sono registrati presso il Consiglio dentale ungherese e
-                    presso molti consigli dentistici europei, incluso il Regno Unito. La clinica fa interventi
-                    chirurgici in Irlanda e Italia.
-            </br>
-            </br>
-            Tutti i trattamenti sono garantiti secondo le norme UE.
-            </br>
-            </br>
-            La clinica cura pazienti italiani dal 2004. A causa del gran numero di pazienti italiani che
+                Tutti i trattamenti sono garantiti secondo le norme UE.</br></br>
+                
+                La clinica cura pazienti italiani dal 2004. A causa del gran numero di pazienti italiani che
 hanno ricevuto cure, 13 anni fa è stato deciso di aprire un ambulatorio a Ravenna per le cure
 post-operatorie. Una squadra viaggia dall'Ungheria per 4 giorni ogni mese. La clinica dispone
-anche di uno studio a Ravenna, Italia.
-
-            </br>
-            </br>
-            Nell'ambulatorio postoperatorio a Ravenna il Dental Team cura i pazienti prima e dopo il
+anche di uno studio a Ravenna, Italia.</br></br>
+                
+Nell'ambulatorio postoperatorio a Ravenna il Dental Team cura i pazienti prima e dopo il
 trattamento in Ungheria. I potenziali pazienti possono visitare Ravenna per una consultazione
 in ambulatori. La clinica ha recentemente installato una moderna macchina radiografica
 panoramica digitale a Ravenna. È collegata alla clinica in Ungheria. Il dentista a Ravenna
-avrà accesso a tutte le radiografie e ai registri dei trattamenti dei pazienti.
+avrà accesso a tutte le radiografie e ai registri dei trattamenti dei pazienti.</p>
+        </div>
+
+        <div class="lightbox1">
+            <a href="aboutus-pics/001.jpg" data-lightbox="roadtrip" src="aboutus-pics/001.jpg" ><img class="example-image" src="aboutus-pics/001.jpg" alt="dental clinic"/></a>
+            <a href="aboutus-pics/003.jpg" data-lightbox="roadtrip" src="aboutus-pics/003.jpg"><img class="example-image" src="aboutus-pics/003.jpg" alt="x-ray"/></a>
+            <a href="aboutus-pics/004.jpg" data-lightbox="roadtrip" src="aboutus-pics/004.jpg"><img class="example-image" src="aboutus-pics/004.jpg" alt="operation"/></a>
+            <a href="aboutus-pics/005.jpg" data-lightbox="roadtrip" src="aboutus-pics/005.jpg"><img class="example-image" src="aboutus-pics/005.jpg" alt="x-ray"/></a>
+            <a href="aboutus-pics/006.jpg" data-lightbox="roadtrip" src="aboutus-pics/006.jpg"><img class="example-image" src="aboutus-pics/006.jpg" alt="treatment"/></a>
+            <a href="aboutus-pics/007.jpg" data-lightbox="roadtrip" src="aboutus-pics/007.jpg"><img class="example-image" src="aboutus-pics/007.jpg" alt="reception"/></a>
+        </div>
+
+
+       <!-- ============================================ -->
+<!--                   Reviews                    -->
+<!-- ============================================ -->
+
+<section id="reviews-355">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Le nostre recensioni</span>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <img class="cs-quote" aria-hidden="true" src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/quote-blue.svg" decoding="async" alt="quote icon" width="40" height="33">
+                <p class="cs-review">
+                    Molto soddisfatto del trattamento finora. La cura è eccellente e il personale è meraviglioso. In attesa della mia prossima visita.
                 </p>
-            </div>
+                <span class="cs-name">Giulia</span>
+                <span class="cs-job">paziente italiano</span>
+            </li>
+            <li class="cs-item">
+                <img class="cs-quote" aria-hidden="true" src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/quote-blue.svg" decoding="async" alt="quote icon" width="40" height="33">
+                <p class="cs-review">
+                    Molto soddisfatto del mio trattamento, un enorme ringraziamento a tutto il team della clinica: 5 stelle, soddisfatto al 110%! Hanno fatto di tutto per assicurarsi che avessi un soggiorno confortevole e tutto ciò di cui avevo bisogno. Lo consiglierò a chiunque abbia bisogno di cure odontoiatriche.
+                </p>
+                <span class="cs-name">Francesco</span>
+                <span class="cs-job">paziente italiano</span>
+            </li>
+            <li class="cs-item">
+                <img class="cs-quote" aria-hidden="true" src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/quote-blue.svg" decoding="async" alt="quote icon" width="40" height="33">
+                <p class="cs-review">
+                    Ottimo lavoro fatto sui miei denti. Il personale è stato molto gentile e accogliente. Ti fanno sentire il benvenuto e spiegano tutto nei minimi dettagli. Il dentista ha fatto un ottimo lavoro e sono soddisfatto al 100% dei risultati. Consiglierei questa clinica a tutti gli italiani che intendono sottoporsi a un trattamento in Ungheria. L'alloggio offre un buon rapporto qualità prezzo ed è vicino al centro città.
+                </p>
+                <span class="cs-name">Andrea</span>
+                <span class="cs-job">paziente italiano</span>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<div class="lightbox1">
+    <a href="aboutus-pics/008.jpg" data-lightbox="roadtrip" src="aboutus-pics/008.jpg" ><img class="example-image" src="aboutus-pics/008.jpg" alt="smiling child"/></a>
+    <a href="aboutus-pics/009.jpg" data-lightbox="roadtrip" src="aboutus-pics/009.jpg"><img class="example-image" src="aboutus-pics/009.jpg" alt="waiting room"/></a>
+    <a href="aboutus-pics/010.jpg" data-lightbox="roadtrip" src="aboutus-pics/010.jpg"><img class="example-image" src="aboutus-pics/010.jpg" alt="dental clinic"/></a>
+    <a href="aboutus-pics/011.jpg" data-lightbox="roadtrip" src="aboutus-pics/011.jpg"><img class="example-image" src="aboutus-pics/011.jpg" alt="dental office"/></a>
+    <a href="aboutus-pics/0012.jpg" data-lightbox="roadtrip" src="aboutus-pics/0012.jpg"><img class="example-image" src="aboutus-pics/0012.jpg" alt="decoration"/></a>
+    <a href="aboutus-pics/013.jpg" data-lightbox="roadtrip" src="aboutus-pics/013.jpg"><img class="example-image" src="aboutus-pics/013.jpg" alt="dental office"/></a>
+</div>
+                                
+                                
 
 
+<!-- ============================================ -->
+<!--                   Footer                     -->
+<!-- ============================================ -->
 
-            <div class="gallery">
-              <a href="aboutus-pics/001.jpg" data-lightbox="mygallery"><img src="aboutus-pics/001.jpg"></a>
-              <a href="aboutus-pics/003.jpg" data-lightbox="mygallery"><img src="aboutus-pics/003.jpg"></a>
-              <a href="aboutus-pics/004.jpg" data-lightbox="mygallery"><img src="aboutus-pics/004.jpg"></a>
-              <a href="aboutus-pics/005.jpg" data-lightbox="mygallery"><img src="aboutus-pics/005.jpg"></a>
-              <a href="aboutus-pics/006.jpg" data-lightbox="mygallery"><img src="aboutus-pics/006.jpg"></a>
-              <a href="aboutus-pics/007.jpg" data-lightbox="mygallery"><img src="aboutus-pics/007.jpg"></a>
-          </div> 
-
-
-            <div class="reviews">
-                <h1>Recensioni dei pazienti</h1></br></br>
-                <p>"Molto soddisfatto del trattamento finora, la cura è eccellente e il personale è meraviglioso.
-                    Non vedo l'ora della mia prossima visita."</p></br>
-                <p>"Vorrei ringraziare il team per i miei bellissimi denti. Sono al settimo cielo per il lavoro che
-                    hanno svolto."</p>
-                <p>"Soddisfatto del mio trattamento, un enorme ringraziamento a tutto il team della clinica: 5
-                    stelle, soddisfatto al 110%! Tutti hanno fatto del loro meglio per assicurarsi che avessi un
-                    soggiorno confortevole e tutto ciò di cui avevo bisogno. Lo consiglierò a chiunque ha bisogno
-                    di un trattamento dentale."</p></br>
-                <p>"Un lavoro eccellente svolto sui miei denti. Il personale è stato molto gentile e accogliente. Ti
-                    fanno sentire il benvenuto e ti spiegano tutto nei minimi dettagli. Il dentista ha fatto un lavoro
-                    eccellente e sono soddisfatto al 100% dei risultati. Consiglierei questa clinica a chiunque stia
-                    pensando di farsi curare in Ungheria. L'alloggio ha un buon rapporto qualità-prezzo ed è
-                    vicino al centro città."</p>
-            </div>
-
-
-            <div class="gallery">
-              <a href="aboutus-pics/008.jpg" data-lightbox="mygallery"><img src="aboutus-pics/008.jpg"></a>
-              <a href="aboutus-pics/009.jpg" data-lightbox="mygallery"><img src="aboutus-pics/009.jpg"></a>
-              <a href="aboutus-pics/010.jpg" data-lightbox="mygallery"><img src="aboutus-pics/010.jpg"></a>
-              <a href="aboutus-pics/011.jpg" data-lightbox="mygallery"><img src="aboutus-pics/011.jpg"></a>
-              <a href="aboutus-pics/0012.jpg" data-lightbox="mygallery"><img src="aboutus-pics/0012.jpg"></a>
-              <a href="aboutus-pics/013.jpg" data-lightbox="mygallery"><img src="aboutus-pics/013.jpg"></a>
-          </div> 
+<footer id="cs-footer-274">
+    <div class="cs-container">
+        <!-- Logo Group -->
+        <div class="cs-logo-group">
+            <a aria-label="go back to home" class="cs-logo" href="index.html">
+                <!-- Remove the light class if you don't need the dark logo -->
+                <img class="cs-logo-img" aria-hidden="true" loading="lazy" decoding="async" src="images/ps-logo.png" alt="logo" width="240" height="32">
+            </a>
             
-    </div>
-    <div class="footer-box">
-        <div class="address"><a href="https://www.google.com/maps/place/Hódmezővásárhely,+Petőfi+út+30,+6800/@46.4162034,20.3241886,17z/data=!3m1!4b1!4m5!3m4!1s0x47446f70550cea01:0x902200b162620fb!8m2!3d46.4162034!4d20.3263773">6800, Hódmezővásárhely, Petőfi út 30.</a>
         </div>
-        <div class="icons-copyright">
-            <div class="bottom-icons">
-                <a href="https://www.facebook.com/MosolyCentrum/"><i class="fab fa-facebook-f"></i> </a>
-                <a href="mailto: drborbathfogaszat@gmail.com"><i class="fa-solid fa-envelope"></i> </a>
-            </div>
-            <div class="copyright">Perfect Smile Dental Implant Centre Hungary &#169; 2024</div>
-        </div>
-        
+        <!-- Links -->
+        <ul class="cs-nav">
+            <li class="cs-nav-li">
+                <span class="cs-header">Contatti</span>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="003385226455">+3385226455</a>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="mailto:drborbath.it@gmail.com">drborbath.it@gmail.com</a>
+            </li>
+        </ul>
+        <ul class="cs-nav">
+            <li class="cs-nav-li">
+                <span class="cs-header">Indirizzo</span>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="https://www.google.com/maps/place/Hódmezővásárhely,+Petőfi+út+30,+6800/@46.4162034,20.3238024,17z/data=!3m1!4b1!4m6!3m5!1s0x47446f70550cea01:0x902200b162620fb!8m2!3d46.4162034!4d20.3263773!16s%2Fg%2F11kx12b3sh?entry=ttu">6800 Hódmezővásárhely,<br> Petőfi út 30</a>
+            </li>
+        </ul>
+        <!-- Contact Info -->
+        <ul class="cs-nav">
+            <li class="cs-nav-li">
+                <span class="cs-header">Orari di Apertura</span>
+            </li>
+            <li class="cs-nav-li">
+                Lunedi - Venerdí: 7am-7pm
+            </li>
+        </ul>
     </div>
-
-    
-
-</body>
+    <div class="copyright">Perfect Smile Dental Implant Centre Hungary &#169; 2024</div>
+</footer>
+    <script defer src="js/nav.js"></script>
+    <script src="js/lightbox-plus-jquery.js"></script>
 </body>
 </html>

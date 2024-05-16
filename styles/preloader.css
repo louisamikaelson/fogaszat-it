@@ -1,8 +1,0 @@
-#preloader {
-    background: #fff url("https://www.siad.com/en/depurazione-acque/images/_preloader.gif") no-repeat center center;
-    background-size: 15%;
-    height: 100%;
-    width: 100%;
-    position: fixed;
-    z-index: 999999;
-}
